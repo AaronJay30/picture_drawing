@@ -187,15 +187,15 @@ const Canvas = () => {
 	const audioRef = useRef(null); // Reference for the audio element
 
 	const images = [
-		"../../public/assets/scaled_imageBrush1.png",
-		"../../public/assets/scaled_imageBrush2.png",
-		"../../public/assets/scaled_imageBrush3.png",
-		"../../public/assets/scaled_imageBrush4.png",
-		"../../public/assets/scaled_imageBrush5.png",
-		"../../public/assets/scaled_imageBrush6.png",
-		"../../public/assets/scaled_imageBrush7.png",
-		"../../public/assets/scaled_imageBrush8.png",
-		"../../public/assets/scaled_imageBrush9.png",
+		"/assets/scaled_imageBrush1.png",
+		"/assets/scaled_imageBrush2.png",
+		"/assets/scaled_imageBrush3.png",
+		"/assets/scaled_imageBrush4.png",
+		"/assets/scaled_imageBrush5.png",
+		"/assets/scaled_imageBrush6.png",
+		"/assets/scaled_imageBrush7.png",
+		"/assets/scaled_imageBrush8.png",
+		"/assets/scaled_imageBrush9.png",
 	];
 
 	useEffect(() => {
@@ -411,7 +411,7 @@ const Canvas = () => {
 		<div className="canvas-container">
 			<audio
 				ref={audioRef}
-				src="/../../public/assets/bg.mp3"
+				src="//assets/bg.mp3"
 				muted
 				autoPlay
 				loop
@@ -522,7 +522,7 @@ const Canvas = () => {
 				<Modal
 					message="Hello my babi! Will you be my Valentine? ❤️"
 					onClose={() => setFinalModal(false)}
-					gifSrc="../../public/assets/valentine.gif" // Add the path to your GIF here
+					gifSrc="/assets/valentine.gif" // Add the path to your GIF here
 				/>
 			)}
 		</div>
