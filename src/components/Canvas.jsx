@@ -187,15 +187,15 @@ const Canvas = () => {
 	const audioRef = useRef(null); // Reference for the audio element
 
 	const images = [
-		"/assets/scaled_imageBrush1.png",
-		"/assets/scaled_imageBrush2.png",
-		"/assets/scaled_imageBrush3.png",
-		"/assets/scaled_imageBrush4.png",
-		"/assets/scaled_imageBrush5.png",
-		"/assets/scaled_imageBrush6.png",
-		"/assets/scaled_imageBrush7.png",
-		"/assets/scaled_imageBrush8.png",
-		"/assets/scaled_imageBrush9.png",
+		"/images/scaled_imageBrush1.png",
+		"/images/scaled_imageBrush2.png",
+		"/images/scaled_imageBrush3.png",
+		"/images/scaled_imageBrush4.png",
+		"/images/scaled_imageBrush5.png",
+		"/images/scaled_imageBrush6.png",
+		"/images/scaled_imageBrush7.png",
+		"/images/scaled_imageBrush8.png",
+		"/images/scaled_imageBrush9.png",
 	];
 
 	useEffect(() => {
@@ -411,7 +411,7 @@ const Canvas = () => {
 		<div className="canvas-container">
 			<audio
 				ref={audioRef}
-				src="//assets/bg.mp3"
+				src="/images/bg.mp3"
 				muted
 				autoPlay
 				loop
@@ -522,7 +522,7 @@ const Canvas = () => {
 				<Modal
 					message="Hello my babi! Will you be my Valentine? ❤️"
 					onClose={() => setFinalModal(false)}
-					gifSrc="/assets/valentine.gif" // Add the path to your GIF here
+					gifSrc="/images/valentine.gif" // Add the path to your GIF here
 				/>
 			)}
 		</div>
